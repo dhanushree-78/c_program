@@ -7,9 +7,8 @@ int main()
     for(i=0;arr[i]!='\0';i++)
     {
         char ch =arr[i];
-if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
-        
+        if(ch==' ')
         c++;
     }
-    printf("vowels count : %d",c);
+    printf("no of words in the string %d",(c+1));
 }
