@@ -1,7 +1,7 @@
 #include<stdio.h>
  int main()
  {
-     int n;
-     scanf("%d",&n);
-     printf("%d",n%10);
- }
+     int a;
+     scanf ("%d",&a);
+      printf("%d",a);
+  }
