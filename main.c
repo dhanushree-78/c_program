@@ -1,12 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    if(a>0)
-    printf("Number is %d : Positive",a);
-    else if(a<0)
-    printf("Number is %d : Negative",a);
-    else
-    printf("Number is 0");
+    int n,i,c=0;
+    scanf("%d",&n);
+    if(n==1)
+    {
+    printf("Neither prime nor composite nummber");
+    return 0;
+    }
+    for(i=2;i<=n/2;i++)
+    {
+        if(n%2==0)
+        {c++;
+        printf("Not a prime number");
+        break;
+        }
+    }
+    if(c==0)
+    printf("Prime Number");
 }
