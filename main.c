@@ -1,5 +1,5 @@
 #include<stdio.h>
- int main ()
+int main()
  {
-  printf("slow and \"steady\" wins the race");
+     printf("%%%%");
  }
