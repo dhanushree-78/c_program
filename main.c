@@ -1,7 +1,5 @@
 #include<stdio.h>
  int main ()
  {
-    printf("dhanushree");
+  printf("slow and \"steady\" wins the race");
  }
- 
- 
