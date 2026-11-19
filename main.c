@@ -3,15 +3,14 @@ int main()
 {
     char arr[100];
     scanf("%[^\n]s",arr);
-    int i;
+    int i,c=0;
     for(i=0;arr[i]!='\0';i++)
     {
         char ch =arr[i];
-        if(ch>='A' && ch<='Z')
-        printf("%c",ch+32);
-        else if(ch>='a' && ch<='z')
-    printf("%c",ch-32);
-    else
-    printf("%c",ch);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+        continue;
+        else
+        c++;
     }
+    printf("consonants count : %d",c);
 }
