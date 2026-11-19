@@ -1,8 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int i,t,n;
-    scanf("%d%d",&t,&n);
-    for(i=1;i<=n;i++)
-    printf("%d * %d =%d\n",i,t,i*t);
+    int a;
+    scanf("%d",&a);
+    if(a % 2 == 0 )
+    printf("Even");
+    else
+    printf("Odd");
 }
