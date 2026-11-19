@@ -1,13 +1,17 @@
 #include<stdio.h>
- int main()
- {
-       int n,i,sum=0;
-     scanf("%d",&n);
-     int arr[n];
-     for(i=0;i<n;i++)
-     {scanf("%d",&arr[i]);
-     sum=sum+arr[i];
-     }
-     float avg=(float)sum/n;
-     printf("avg of elements: %.2f",avg);
- }
+int main()
+{
+    char arr[100];
+    scanf("%[^\n]s",arr);
+    int i;
+    for(i=0;arr[i]!='\0';i++)
+    {
+        char ch =arr[i];
+        if(ch>='A' && ch<='Z')
+        printf("%c",ch+32);
+        else if(ch>='a' && ch<='z')
+    printf("%c",ch-32);
+    else
+    printf("%c",ch);
+    }
+}
