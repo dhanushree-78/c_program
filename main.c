@@ -1,10 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
-    scanf("%d%d",&a,&b);
-    if(a>b)
-    printf("Greater is = %d",a);
-    else
-    printf("Greater is = %d",b);
+    int a;
+    scanf("%d",&a);
+    if(a % 3 == 0)
+    printf("Hi");
+    if (a % 5 ==0)
+    printf("Hello");
 }
