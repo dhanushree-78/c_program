@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int n,i;
-    scanf("%d",&n);
-    for(i=1;i<=n/2;i++)
-    {
-        if(n%i==0)
-        printf("%d",i);
-    }
-    printf("%d",n);
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b) && (a>c))
+    printf("Greater is = %d",a);
+    else if (b>c)
+    printf("Greater is = %d",b);
+    else 
+    printf("Greater is = %d",c);
 }
