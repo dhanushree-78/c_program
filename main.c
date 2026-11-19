@@ -1,20 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    char ch;
-    scanf("%c",&ch);
-    switch(ch)
+    char arr[100];
+    scanf("%[^\n]s",arr);
+    int i,c=0;
+    for(i=0;arr[i]!='\0';i++)
     {
-        case'A':
-        printf("AIDS");
-        break;
-        case'B':
-        printf("BUSINESS MANAGEMENT");
-        break;
-        case'C':
-        printf("CYBERSECURITY");
-        break;
-        default:
-        printf("Invalid Input");
+        char ch =arr[i];
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+        
+        c++;
     }
+    printf("vowels count : %d",c);
 }
