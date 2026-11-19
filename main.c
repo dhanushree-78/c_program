@@ -1,20 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n, i;
     scanf("%d",&n);
-    switch(n)
-    {
-        case 0 ... 34:
-        printf("FAIL");
-        break;
-        case 35 ... 60:
-        printf("AVERAGE");
-        break;
-        case 61 ... 100:
-        printf("GOOD");
-        break;
-        default:
-        printf("Invalid Input");
-    }
+    int arr[n];
+    for(i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+    for(i=n-1;i>=0;i--)
+    printf("%d",arr[i]);
 }
