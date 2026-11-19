@@ -1,5 +1,7 @@
 #include<stdio.h>
-int main()
+ int main()
  {
-     printf("%%%%");
+     int n;
+     scanf("%d",&n);
+     printf("%d",n%10);
  }
