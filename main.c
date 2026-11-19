@@ -1,16 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    char arr[100];
-    scanf("%[^\n]s",arr);
-    int i,c=0;
-    for(i=0;arr[i]!='\0';i++)
+    int n;
+    scanf("%d",&n);
+    switch(n)
     {
-        char ch =arr[i];
-if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
-        continue;
-        else
-        c++;
+        case 1:
+        printf("Sunday");
+        break;
+        case 2:
+        printf("Monday");
+        break;
+        case 3:
+        printf("Tuesday");
+        break;
+        default:
+        printf("Invalid Input");
     }
-    printf("consonants count : %d",c);
 }
